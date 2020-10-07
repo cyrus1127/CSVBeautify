@@ -1,0 +1,24 @@
+{
+  "name" : "CSVBeautify",
+  "version" : "1.0.2",
+  "description" : "a mini helping tools for user to view a beautified cvs as json format.",
+  "background" : { "scripts": ["background.js"] },   
+  "permissions" : [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+   ],
+    "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["frontPage.js"]
+    }
+  ],
+  "minimum_chrome_version" : "6.0.0.0",
+  "icons" : {
+    "16" : "imageinfo-16.png",
+    "48" : "imageinfo-48.png",
+    "128" : "imageinfo-128.png"
+  },
+  "manifest_version": 2
+}
